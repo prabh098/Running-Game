@@ -3,18 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Runner Game</title>
-
-  <!-- Link CSS -->
-  <link rel="stylesheet" href="css/styles.css" />
+  <title>Flappy Style Game</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="game">
+    <!-- Score display -->
+    <div id="score">Score: 0</div>
+
+    <!-- Player (bird) -->
     <div id="player"></div>
-    <div id="hurdle"></div>
+
+    <!-- Pipes (top & bottom) -->
+    <div id="pipeTop" class="pipe"></div>
+    <div id="pipeBottom" class="pipe"></div>
   </div>
 
-  <!-- Link JS -->
-  <script src="js/script.js" defer></script>
+  <script src="script.js"></script>
 </body>
 </html>
