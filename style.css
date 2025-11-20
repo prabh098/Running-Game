@@ -16,31 +16,33 @@ body {
   height: 400px;
   background: #aee4ff;
   border: 3px solid #333;
-  border-radius: 8px;
+  border-radius: 10px;
   position: relative;
   overflow: hidden;
 }
 
-/* Player (bird) */
-#player {
-  width: 40px;
-  height: 40px;
+/* Start button */
+#startBtn {
   position: absolute;
-  left: 100px;              /* fixed x like Flappy Bird */
-  top: 180px;               /* starting y */
-  background-image: url("https://cdn-icons-png.flaticon.com/512/616/616408.png");
-  background-size: cover;
-  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 12px 28px;
+  font-size: 22px;
+  font-weight: bold;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 20;
 }
 
-/* Pipes */
-.pipe {
-  position: absolute;
-  width: 60px;              /* pipe width */
-  background: #2ecc71;
+#startBtn:hover {
+  background: #1d8a4d;
 }
 
-/* Score text */
+/* Score */
 #score {
   position: absolute;
   top: 10px;
@@ -49,4 +51,23 @@ body {
   font-weight: bold;
   color: #000;
   z-index: 10;
+}
+
+/* Player (changed character) */
+#player {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 100px;
+  top: 180px;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/616/616408.png");
+  background-size: cover;
+  border-radius: 50%;
+}
+
+/* Pipes */
+.pipe {
+  position: absolute;
+  width: 60px;
+  background: #2ecc71;
 }
